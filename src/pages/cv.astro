@@ -1,0 +1,91 @@
+---
+import TimeLineElement from "../components/cv/TimeLine.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Sobre Mí</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Desde una edad temprana, mi fascinación por la informática se manifestó
+    claramente. A la edad de 10 años, ya estaba montando y desmontado
+    mi propio ordeandor, lo que marcó el inicio de una relación duradera con la tecnología.
+    Esta pasión inicial me ha llevado
+    no solo a especializarme como DevOps, enfocado en la integración y entrega
+    continua, sino también a desarrollar habilidades en el ámbito del desarrollo
+    de código. Con una sólida base técnica y una trayectoria que abarca desde la
+    infraestructura hasta la programación, busco constantemente fusionar mis
+    habilidades para ofrecer soluciones tecnológicas robustas y eficientes. Mi
+    compromiso con la excelencia técnica y la innovación me posiciona para
+    enfrentar y superar los desafíos más complejos en el ámbito de la tecnología
+    de la información.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Educación</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Agile IT Managment: Lean IT, Scrum, DevOps"
+      subtitle="2017 al 2018 Universitat Politècnica de Catalunya, Barcelona"
+    />
+    <TimeLineElement
+      title="Adminstracion de Sistemas Informaticos"
+      subtitle="2009 al 2011 IES Milà i Fontanals, Igualada "
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experiencia</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="DevOps Lead en S4Gaming"
+      subtitle="2012 - Actualidad"
+    >
+    Como especialista en DevOps, gestiono la sincronización y despliegue de aplicaciones, reforzando la colaboración entre desarrolladores y el equipo operativo. Además de liderar al equipo de sistemas, encuentro satisfacción en ofrecer formaciones.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Docenete en INS Daniel Blanxart "
+      subtitle="2021 al 2022"
+    >
+    En el transcurso del año 2021, tuve el privilegio de incorporarme como docente al ciclo formativo de grado medio de informática, asumiendo responsabilidades académicas y contribuyendo activamente al desarrollo educativo de los estudiantes en el ámbito tecnológico.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certificaciones</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="#" target="_blank">Lean IT Fundations</a>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Conocimientos</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>AWS</li>
+    <li>Proxmox</li>
+    <li>Java</li>
+    <li>Terraform</li>
+    <li>Ansible</li>
+    <li>Docker</li>
+    <li>Jenkins</li>
+    <li>Python</li>
+    <li>PHP</li>
+    <li>Vagrant</li>
+    <li>NoSQL</li>
+    <li>SQL</li>
+    <li>DevOps</li>
+    <li>Kanban</li>
+    <li>Scrum</li>
+  </ul>
+</BaseLayout>

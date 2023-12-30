@@ -1,9 +1,10 @@
 import { defineConfig } from 'astro/config';
-
-import vercel from "@astrojs/vercel/serverless";
+import mdx from '@astrojs/mdx';
+import sitemap from '@astrojs/sitemap';
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  output: "server",
-  adapter: vercel()
+  site: 'https://astrofy-template.netlify.app',
+  integrations: [mdx(), sitemap(), tailwind()]
 });
