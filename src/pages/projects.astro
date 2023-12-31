@@ -5,53 +5,50 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout title = "Proyectos" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Proyectos {"</>"}</div>
+    <div class="text-3xl font-bold w-full">Proyectos {"</>"}</div>
+    <div class="columns-2">
+      <HorizontalCard
+        title="Astro"
+        img="/astro.webp"
+        desc="Código de este Portfolio, Integrado en Vercel"
+        url="https://github.com/alvarofernandezavalos/astro-portfolio"
+        badge=""
+      />
+      <HorizontalCard
+        title="Spring Boot"
+        img="/spring.png"
+        desc="CRUD desarrollado en Java"
+        url="https://github.com/alvarofernandezavalos/springboot"
+        badge=""
+      />
+      <HorizontalCard
+        title="Ansible"
+        img="/ansible.png"
+        desc="Ansible Playbooks"
+        url="https://github.com/alvarofernandezavalos/ansible"
+        badge=""
+      />
+      <HorizontalCard
+        title="PHP"
+        img="/php.png"
+        desc="CRUD desarrollado en PHP"
+        url="https://github.com/alvarofernandezavalos/php"
+        badge=""
+      />
+      <HorizontalCard
+        title="Vagrant"
+        img="/vagrant.png"
+        desc="Aprovisionamiento de Máquinas Virtuales"
+        url="https://github.com/alvarofernandezavalos/vagrant"
+        badge=""
+      />
+      <HorizontalCard
+        title="Radio Online"
+        img="/xbmc.png"
+        desc="Addon para XBMC"
+        url="https://github.com/alvarofernandezavalos/radio-plugin-xbmc"
+        badge=""
+      />
+    </div>
   </div>
-  <HorizontalCard
-    title="Astro"
-    img="/astro.webp"
-    desc="Código de este Portfolio, Integrado en Vercel"
-    url="https://github.com/alvarofernandezavalos/astro-portfolio"
-    badge="Dev"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Spring Boot"
-    img="/spring.png"
-    desc="CRUD desarrollado en Java"
-    url="https://github.com/alvarofernandezavalos/springboot"
-    badge="Dev"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Ansible"
-    img="/ansible.png"
-    desc="Ansible Playbooks"
-    url="https://github.com/alvarofernandezavalos/ansible"
-    badge="Ops"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="PHP"
-    img="/php.png"
-    desc="CRUD desarrollado en PHP"
-    url="https://github.com/alvarofernandezavalos/php"
-    badge="Dev"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Vagrant"
-    img="/vagrant.png"
-    desc="Aprovisionamiento de Máquinas Virtuales"
-    url="https://github.com/alvarofernandezavalos/vagrant"
-    badge="Ops"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Radio Online"
-    img="/xbmc.png"
-    desc="Addon para XBMC"
-    url="https://github.com/alvarofernandezavalos/radio-plugin-xbmc"
-    badge="Dev"
-  />
 </BaseLayout>
